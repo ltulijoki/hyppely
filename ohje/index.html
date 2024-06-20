@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="fi">
+    <head>
+        <meta charset="utf-8">
+        <title>hyppely ohje</title>
+        <style>
+            ::-webkit-scrollbar {
+                width: 10px;
+                height: 10px;
+            }
+
+            ::-webkit-scrollbar-thumb {
+                background-color: #0000FF;
+                -webkit-border-radius: 5px;
+                border-radius: 5px;
+                border: 1px solid #303030;
+            }
+
+            ::-webkit-scrollbar-thumb:hover {
+                background-color: #792A2E;
+            }
+
+            ::-webkit-scrollbar-track {
+                background-color: #331800;
+            }
+
+            * {
+                scrollbar-color: #0000FF #331800;
+            }
+
+            body, a {
+                font-family: Arial, Helvetica, sans-serif;
+                margin: 0;
+                background-color: #00FFFB;
+                color: #303030;
+                line-height: 1.5;
+                font-size: 1.1em;
+            }
+
+            a {
+                font-weight: bold;
+                text-decoration: none;
+            }
+
+            a:hover {
+                text-decoration: underline;
+            }
+
+            h1 {
+                text-align: center;
+                font-size: 3em;
+            }
+
+            article, section {
+                clear: both;
+            }
+
+            h2 {
+                text-align: center;
+                font-size: 2.5em;
+                margin: 0;
+                padding-top: 0.5em;
+            }
+
+            section {
+                margin: 10px 50px;
+            }
+
+            h3 {
+                font-size: 2em;
+                margin: 0;
+                padding-top: 0.5em;
+            }
+
+            h4 {
+                clear: both;
+                font-size: 1.5em;
+                margin: 0;
+                padding: 0.5em 0;
+            }
+
+            ul, li {
+                padding: 0;
+                margin: 0;
+            }
+
+            .kuva {
+                float: left;
+                margin: 10px;
+                height: 75px;
+            }
+
+            .nayttokuva {
+                width: 100%;
+            }
+
+            div.kuva {
+                width: 75px;
+            }
+
+            div.levea {
+                width: 150px;
+            }
+
+            .pyorea {
+                border-radius: 37.5px;
+            }
+
+            p {
+                margin: 0;
+                padding-top: 1em;
+            }
+
+            img:not(.nayttokuva) {
+                transform: rotate(180deg);
+            }
+
+            kbd {
+                display: inline-block;
+                font-family: inherit;
+                font-size: 1.2em;
+                color: white;
+                background-color: #303030;
+                width: 25px;
+                border-radius: 10px;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>hyppely ohje</h1>
+        <article id="pelaaja-art">
+            <h2>Pelaaja</h2>
+            <section id="pelaaja">
+                <h3>Pelaaja</h3>
+                <img src="../Assets/Kuvat/Pelaaja.png" alt="" class="kuva">
+                <img src="../Assets/Kuvat/PelaajaPorkkanalla.png" alt="" class="kuva">
+                <p>
+                    Sinä liikutat tätä hahmoa.
+                    Oikeanpuolimmaisessa kuvassa pelaajalla on porkkana.
+                    Porkkanalla pelaaja kestää yhden iskun,
+                    jonka jälkeen hän menettää porkkanan.
+                </p>
+                <h4>Katso myös</h4>
+                <ul>
+                    <li><a href="#liikkuminen">Liikkuminen</a></li>
+                    <li><a href="#porkkana">Porkkana</a></li>
+                    <li><a href="#osuma">Osuma</a></li>
+                </ul>
+            </section>
+        </article>
+        <article id="alustat">
+            <h2>Alustat</h2>
+            <section id="laatikko">
+                <h3>Laatikko</h3>
+                <div class="kuva" style="background-color: #663300;"></div>
+                <div class="kuva" style="background-color: #000000;"></div>
+                <div class="kuva" style="background-color: #E7A681;"></div>
+                <div class="kuva levea pyorea" style="background-color: #FF0000;"></div>
+                <div class="kuva levea pyorea" style="background-color: #00FF00;"></div>
+                <div class="kuva levea pyorea" style="background-color: #0000FF;"></div>
+                <div class="kuva levea pyorea" style="background-color: #FFFF00;"></div>
+                <img src="../Assets/Kuvat/Laatikko2.png" alt="" class="kuva">
+                <p>
+                    Laatikkoja on monennäköisiä.
+                    1. kuvassa vasemmalta näkyy tavallinen laatikko.
+                    2. kuvassa oleva laatikko esiintyy maan alla ja linnoissa.
+                    3. kuvan laatikko tavataan vedessä.
+                    Kuvien 4-7 laatikot ovat kolmostasojen maanpäällisillä osuuksilla.
+                    8. laatikko nähdään laivoissa ja ilmalaivoissa.
+                    Laatikoiden päällä voi hyppiä.
+                </p>
+            </section>
+            <section id="jaa">
+                <h3>Jää</h3>
+                <div class="kuva" style="background-color: #CFCFCF;"></div>
+                <p>
+                    Jäällä sinä liu'ut hitaasti eteenpäin.
+                </p>
+            </section>
+            <section id="kuljetin">
+                <h3>Kuljetin</h3>
+                <img src="../Assets/Kuvat/Kuljetin.png" alt="" class="kuva" style="width: 75px; height: auto;">
+                <img src="../Assets/Kuvat/KuljetinSivu.png" alt="" class="kuva" style="width: 75px; height: auto;">
+                <p>
+                    Kuljettimet liikkuvat nuolien mukaisesti ylös ja alas tai vasemmalle ja oikealle.
+                    Pelaaja ei liiku sivusuuntaisen kuljettimen mukana.
+                </p>
+            </section>
+            <section id="tippuva">
+                <h3>Tippuva alusta</h3>
+                <img src="../Assets/Kuvat/TippuvaAlusta.png" alt="" class="kuva" style="width: auto; height: auto;">
+                <div class="kuva" style="background-color: #FF0000; height: 25px;"></div>
+                <p>
+                    Alusta tippuu alaspäin pelaajan ollessa sen päällä.
+                </p>
+                <h4>Katso myös</h4>
+                <ul>
+                    <li><a href="#pelaaja">Pelaaja</a></li>
+                </ul>
+            </section>
+        </article>
+        <article id="porkkanat">
+            <h2>Porkkanat</h2>
+            <section id="porkkana">
+                <h3>Porkkana</h3>
+                <img src="../Assets/Kuvat/Porkkana.png" alt="" class="kuva">
+                <p>
+                    Voit ottaa porkkanan koskettamalla sitä pelaajalla.
+                </p>
+                <h4>Katso myös</h4>
+                <ul>
+                    <li><a href="#mistasaapork">Mistä voi saada porkkanan?</a></li>
+                </ul>
+            </section>
+            <section id="porkkanalaatikko">
+                <h3>Porkkanalaatikko</h3>
+                <img src="../Assets/Kuvat/Porkkanalaatikko.png" alt="" class="kuva">
+                <div class="kuva" style="background-color: #FFF200;"></div>
+                <p>
+                    Avaa porkkanalaatikko hyppäämällä sen pohjaan.
+                    Porkkana siirtyy laatikon päälle.
+                    Oikeanpuolimmaisessa kuvassa laatikko on tyhjä.
+                </p>
+                <h4>Katso myös</h4>
+                <ul>
+                    <li><a href="#porkkana">Porkkana</a></li>
+                </ul>
+            </section>
+        </article>
+        <article id="viholliset">
+            <h2>Viholliset</h2>
+            <section id="vihollinen">
+                <h3>Vihollinen</h3>
+                <img src="../Assets/Kuvat/Vihollinen.png" alt="" class="kuva">
+                <img src="../Assets/Kuvat/VihollinenKuollut.png" alt="" class="kuva">
+                <img src="../Assets/Kuvat/VihollinenHohtaa.png" alt="" class="kuva">
+                <img src="../Assets/Kuvat/VihollinenHohtaaKuollut.png" alt="" class="kuva">
+                <p>
+                    Vihollinen seuraa sinua.
+                    Vihollisia on kahdenvärisiä.
+                    Keltaisia esiintyy maan alla ja harmaita muualla.
+                    Kun hyppäät vihollisen päälle,
+                    se ensin litistyy ja sitten katoaa.
+                    Jos osut viholliseen muualta kuin päältä,
+                    saat osuman.
+                </p>
+                <h4>Katso myös</h4>
+                <ul>
+                    <li><a href="#osuma">Osuma</a></li>
+                </ul>
+            </section>
+            <section id="viheisaaos">
+                <h3>Viholliset, joihin ei saa osua</h3>
+                <img src="../Assets/Kuvat/Piikkipallo.png" alt="" class="kuva">
+                <img src="../Assets/Kuvat/PalavaTynnyri.png" alt="" class="kuva">
+                <img src="../Assets/Kuvat/Laavavihollinen.png" alt="" class="kuva">
+                <div class="kuva pyorea" style="background-color: #792A2E;"></div>
+                <span class="kuva">
+                    <img src="../Assets/Kuvat/TuliPieni.png" alt="" style="height: 37.5px;">
+                    <br>
+                    <img src="../Assets/Kuvat/Tuli.png" alt="" style="height: 37.5px;">
+                </span>
+                <img src="../Assets/Kuvat/VihollinenEiSaaOsua.png" alt="" class="kuva">
+                <img src="../Assets/Kuvat/Kala.png" alt="" class="kuva">
+                <img src="../Assets/Kuvat/Jaapuikko.png" alt="" class="kuva">
+                <p>
+                    Näihin osuminen missä tahansa suunnassa antaa osuman.
+                    Piikkipallo ja palava tynnyri pysyvät paikallaan.
+                    Piikkipallo on saman kokoinen kuin pelaaja,
+                    mutta palava tynnyri on 1,5 kertaa isompi.
+                    Laavavihollisia (3. kuva vasemmalta) tippuu viholliskoneista.
+                    Laavapallot hyppivät alhaalta.
+                    Tuli suurenee ja pienenee.
+                    Punaiset viholliset tavallisten vihollisten tavoin liikkuvat sinua kohti.
+                    Kalat seuraavat sinua vedessä.
+                    Jos olet lähellä kalaa,
+                    se ei käänny sinua kohti, vaan jatkaa samaan suuntaan.
+                    Jääpuikkoja tippuu ylhäältä tai löytyy maasta.
+                </p>
+                <h4>Katso myös</h4>
+                <ul>
+                    <li><a href="#osuma">Osuma</a></li>
+                    <li><a href="#viholliskone">Viholliskone</a></li>
+                    <li><a href="#vihollinen">(Tavallinen) vihollinen</a></li>
+                    <li><a href="#kalat">Kalan ja hyppivän kalan erot</a></li>
+                </ul>
+            </section>
+            <section id="hyppivakala">
+                <h3>Hyppivä kala</h3>
+                <img src="../Assets/Kuvat/Kala.png" alt="" class="kuva">
+                <p>
+                    Hyppivä kala hyppii vedestä.
+                    Voit tiputtaa sen hyppäämällä päälle.
+                    Jos osut muualta kuin päältä,
+                    saat osuman.
+                </p>
+                <h4>Katso myös</h4>
+                <ul>
+                    <li><a href="#osuma">Osuma</a></li>
+                    <li><a href="#kalat">Kalan ja hyppivän kalan erot</a></li>
+                </ul>
+            </section>
+            <section id="murskain">
+                <h3>Murskain</h3>
+                <img src="../Assets/Kuvat/Murskain.png" alt="" class="kuva">
+                <p>
+                    Murskain pamahtaa yltäältä ja yrittää murskata sinut.
+                    Saat osuman, jos jäät murskaimen alle.
+                </p>
+                <h4>Katso myös</h4>
+                <ul>
+                    <li><a href="#osuma">Osuma</a></li>
+                </ul>
+            </section>
+        </article>
+        <article id="tykit">
+            <h2>Tykit</h2>
+            <section id="tykki">
+                <h3>Tykki</h3>
+                <img src="../Assets/Kuvat/Tykki.png" alt="" class="kuva">
+                <p>
+                    Tykki ampuu tykinkuulia yleensä molempiin suuntiin.
+                </p>
+                <h4>Katso myös</h4>
+                <ul>
+                    <li><a href="#tykinkuula">Tykinkuula</a></li>
+                </ul>
+            </section>
+            <section id="tykinkuula">
+                <h3>Tykinkuula</h3>
+                <div class="kuva pyorea" style="background-color: #000000;"></div>
+                <p>
+                    Tykinkuula lähtee siihen suuntaan,
+                    mihin tykki ampui sen.
+                    Voit tiputtaa sen hyppäämällä päälle.
+                    Jos osut muualta kuin päältä,
+                    saat osuman.
+                </p>
+                <h4>Katso myös</h4>
+                <ul>
+                    <li><a href="#tykki">Tykki</a></li>
+                    <li><a href="#osuma">Osuma</a></li>
+                </ul>
+            </section>
+        </article>
+        <article id="muut">
+            <h2>Muut pelistä löytyvät asiat</h2>
+            <section id="ovi">
+                <h3>Ovi</h3>
+                <img src="../Assets/Kuvat/Ovi.png" alt="" class="kuva">
+                <img src="../Assets/Kuvat/OviAuki.png" alt="" class="kuva">
+                <p>
+                    Kun menet ovesta,
+                    ovi avautuu.
+                    Sen jälkeen pääset muualle.
+                </p>
+            </section>
+            <section id="viholliskone">
+                <h3>Vihollis/porkkanakone</h3>
+                <img src="../Assets/Kuvat/Viholliskone.png" alt="" class="kuva">
+                <p>
+                    Joistain koneista tippuu vihollisia,
+                    joistain taas porkkanoita ja joistain Laavavihollisia.
+                    Jotkut koneet liikkuvat,
+                    jotkut eivät.
+                </p>
+                <h4>Katso myös</h4>
+                <ul>
+                    <li><a href="#vihollinen">Vihollinen</a></li>
+                    <li><a href="#porkkana">Porkkana</a></li>
+                    <li><a href="#viheisaaos">Laavavihollinen</a></li>
+                </ul>
+            </section>
+            <section id="jaatynyt">
+                <h3>Jäätynyt asia</h3>
+                <img src="../Assets/Kuvat/Jaatynyt.png" alt="" class="kuva">
+                <p>
+                    Jäätynyt asia sulaa osuessaan viholliseen,
+                    johon ei saa osua.
+                    Piikkipallot, kalat ja jääpuikot eivät sulata jäätynyttä asiaa.
+                    Sulaessaan se voi muuttua miksi tahansa.
+                    Voit sulattaa tämän esim. työntämälä viholliskoneen,
+                    josta tulee laavavihollisia, alle.
+                </p>
+                <h4>Katso myös</h4>
+                <ul>
+                    <li><a href="#viheisaaos">Viholliset, joihin ei saa osua</a></li>
+                    <li><a href="#viholliskone">Viholliskone</a></li>
+                </ul>
+            </section>
+            <section id="nuoli">
+                <h3>Nuoli</h3>
+                <img src="../Assets/Kuvat/Nuoli.png" alt="" class="kuva">
+                <p>
+                    Nuoli näyttää, minne sinun on mentävä.
+                </p>
+            </section>
+        </article>
+        <article id="muuta">
+            <h2>Muuta</h2>
+            <section id="liikkuminen">
+                <h3>Pelaajan liikkuminen</h3>
+                Pelaaja liikkuu sivusuunnassa nuolilla <kbd>&#x1F808;</kbd> ja <kbd>&#x1F80A;</kbd>.
+                Pelaaja hyppää välilyönnillä <kbd style="width: 75px">&nbsp;</kbd>.
+                Pause-valikon saat painamalla enteriä
+                <kbd style="width: 50px; height: 75px; position: relative; zoom: 0.5; vertical-align: middle;">
+                    &#x21B5
+                    <span style="position: absolute; left: 0; bottom: 0; height: 50%; width: 25%; background-color: #00FFFB;"></span>
+                </kbd>.
+                Voit hypätä ollessasi jonkun seuraavista päällä.
+                <ul>
+                    <li>Laatikko</li>
+                    <li>Jää</li>
+                    <li>Kuljetin</li>
+                    <li>Tippuva alusta</li>
+                    <li>Porkkanalaatikko</li>
+                    <li>Vihollinen</li>
+                    <li>Hyppivä kala</li>
+                    <li>Tykki</li>
+                    <li>Tykinkuula</li>
+                    <li>Jäätynyt asia</li>
+                </ul>
+                <h4>Katso myös</h4>
+                <ul>
+                    <li><a href="#pelaaja">Pelaaja</a></li>
+                    <li><a href="#laatikko">Laatikko</a></li>
+                    <li><a href="#jaa">Jää</a></li>
+                    <li><a href="#kuljetin">Kuljetin</a></li>
+                    <li><a href="#tippuva">Tippuva alusta</a></li>
+                    <li><a href="#porkkanalaatikko">Porkkanalaatikko</a></li>
+                    <li><a href="#vihollinen">Vihollinen</a></li>
+                    <li><a href="#hyppivakala">Hyppivä kala</a></li>
+                    <li><a href="#tykki">Tykki</a></li>
+                    <li><a href="#tykinkuula">Tykinkuula</a></li>
+                    <li><a href="#jaatynyt">Jäätynyt asia</a></li>
+                    <li><a href="#pause">Pause-valikko</a></li>
+                </ul>
+            </section>
+            <section id="osuma">
+                <h3>Jos pelaajaan tulee osuma</h3>
+                <p>
+                    Jos sinulla on porkkana,
+                    menetät sen ja siirryt tason alkuun.
+                    Jos sinulla ei ole porkkanaa,
+                    häviät pelin.
+                </p>
+                <h4>Katso myös</h4>
+                <ul>
+                    <li><a href="#pelaaja">Pelaaja</a></li>
+                    <li><a href="#porkkana">Porkkana</a></li>
+                </ul>
+            </section>
+            <section id="kalat">
+                <h3>Kalan ja hyppivän kalan erot</h3>
+                <img src="../Assets/Kuvat/Kala.png" alt="" class="kuva">
+                <p>
+                    Kala ja hyppivä kala näyttävät samalta.
+                    Kalaan ei saa osua missään suunnassa,
+                    kun taas hyppivän kalan voi tiputtaa hyppäämällä päälle.
+                    Kaloja on vedessä ja hyppiviä maan päällä.
+                </p>
+                <h4>Katso myös</h4>
+                <ul>
+                    <li><a href="#kala">Kala</a></li>
+                    <li><a href="#hyppivakala">Hyppivä kala</a></li>
+                </ul>
+            </section>
+            <section id="mistasaapork">
+                <h3>Mistä voi saada porkkanan?</h3>
+                <img src="../Assets/Kuvat/Porkkana.png" alt="" class="kuva">
+                <img src="../Assets/Kuvat/Porkkanalaatikko.png" alt="" class="kuva">
+                <img src="../Assets/Kuvat/Viholliskone.png" alt="" class="kuva">
+                <p>
+                    Porkkanan (1. kuva vasemmalta) voi saada porkkanalaatikosta (2. kuva) tai porkkanakoneesta (3. kuva).
+                </p>
+                <h4>Katso myös</h4>
+                <ul>
+                    <li><a href="#porkkana">Porkkana</a></li>
+                    <li><a href="#porkkanalaatikko">Porkkanalaatikko</a></li>
+                    <li><a href="#viholliskone">Porkkanakone</a></li>
+                </ul>
+            </section>
+            <section id="ylapalkki">
+                <h3>Yläpalkki</h3>
+                <img src="ylapalkki.png" alt="" class="nayttokuva">
+                <p>
+                    Vasemmanpuolimmainen palkki kertoo, onko sinulla porkkanaa.
+                    Jos sinulla ei ole porkkanaa, näkyy kuvan mukainen palkki.
+                    Jos sinulla taas on porkkana, palkki on kokonaan vihreä.
+                </p>
+                <p>
+                    Keskellä oleva palkki näyttää bossin elämät.
+                    Kun bossiin tulee osuma, palkki pienenee.
+                    Kun palkki on kokonaan musta, bossi on tuhottu ja voit jatkaa eteenpäin.
+                    Palkkia ei näy, jos et ole taistelemassa bossia vastaan.
+                </p>
+                <p>
+                    Oikealla näkyy nykyinen taso.
+                </p>
+                <h4>Katso myös</h4>
+                <ul>
+                    <li><a href="#porkkana">Porkkana</a></li>
+                </ul>
+            </section>
+            <section id="pause">
+                <h3>Pause-valikko</h3>
+                <img src="pause.png" alt="" class="nayttokuva">
+                <p>
+                    Valikossa on kolme nappia:
+                </p>
+                <ul>
+                    <li>
+                        <b>Jatka peliä</b>
+                        Sulkee valikon ja peli jatkuu.
+                    </li>
+                    <li>
+                        <b>Aloita alusta</b>
+                        Aloittaa pelin tason 1-1 alusta ilman porkkanaa.
+                    </li>
+                    <li>
+                        <b>Lopeta</b>
+                        Sulkee pelin
+                    </li>
+                </ul>
+                <h4>Katso myös</h4>
+                <ul>
+                    <li><a href="#liikkuminen">Pelaajan liikkuminen ja pause-valikon avaaminen</a></li>
+                </ul>
+            </section>
+        </article>
+    </body>
+</html>

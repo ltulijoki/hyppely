@@ -1,0 +1,230 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/alku.unity
+    guid: df4ecf48c2e105b4e8d6e17a30a6430b
+  - enabled: 1
+    path: Assets/Scenes/1_1.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/1_2.unity
+    guid: c8544fff89124d443af13f2cc05eebc3
+  - enabled: 1
+    path: Assets/Scenes/1_2MaanAlla.unity
+    guid: 1d200e4ce1c19e747a1e9892d6d6f4b7
+  - enabled: 1
+    path: Assets/Scenes/1_2MaanPaalla.unity
+    guid: 0b3cffcae7331bc4a8c57a34cbfdc0d6
+  - enabled: 1
+    path: Assets/Scenes/1_3.unity
+    guid: 8fd0f7e29befe2146a1a90069eb23ffe
+  - enabled: 1
+    path: Assets/Scenes/1_3Vedessa.unity
+    guid: ef96a8f3925142a47af2caef5ed534a5
+  - enabled: 1
+    path: Assets/Scenes/1_3MaanPaalla.unity
+    guid: 5192972c5daea7447b8fd2aedaf8c813
+  - enabled: 1
+    path: Assets/Scenes/1_4.unity
+    guid: 67e5c8b836501b54d8776ba3c4df9220
+  - enabled: 1
+    path: Assets/Scenes/1_4Linnassa.unity
+    guid: 789b09eb08a6026409c08a5a97a8b98d
+  - enabled: 1
+    path: Assets/Scenes/1_4Bossi.unity
+    guid: 1658c6cf93ea8f34fbd0ca04e0474826
+  - enabled: 1
+    path: Assets/Scenes/1_4Ulkona.unity
+    guid: 32022d44a53091141a8b0bfe168f3603
+  - enabled: 1
+    path: Assets/Scenes/2_1.unity
+    guid: 417ce5b02c1fdee408dc4d2a5a9c9b93
+  - enabled: 1
+    path: Assets/Scenes/2_2.unity
+    guid: d03f9e8fb15c0134ba13b0544804fde4
+  - enabled: 1
+    path: Assets/Scenes/2_2MaanAlla.unity
+    guid: b4c653f86b5b9714aafdea8ce586decf
+  - enabled: 1
+    path: Assets/Scenes/2_2MaanPaalla.unity
+    guid: 780c73ca253de51498622ff1e65af0bd
+  - enabled: 1
+    path: Assets/Scenes/2_3.unity
+    guid: ae052fdaaab909b4c9f1dd7da36d844a
+  - enabled: 1
+    path: Assets/Scenes/2_3Vedessa.unity
+    guid: 92605e902f0bf784f892cc43493eed8a
+  - enabled: 1
+    path: Assets/Scenes/2_3MaanPaalla.unity
+    guid: 444be7002ffdaab4990e1609aea602ff
+  - enabled: 1
+    path: Assets/Scenes/2_4.unity
+    guid: f424e321224daaf44a89ce974cb4f818
+  - enabled: 1
+    path: Assets/Scenes/2_4Linnassa.unity
+    guid: ba910dec45aff384894a6b89d7c9be44
+  - enabled: 1
+    path: Assets/Scenes/2_4Bossi.unity
+    guid: d3bb818fd6ed09442a9134d1e2645115
+  - enabled: 1
+    path: Assets/Scenes/2_4Ulkona.unity
+    guid: 0ca81dcb4069f8f47a93772357d78d1f
+  - enabled: 1
+    path: Assets/Scenes/3_1.unity
+    guid: 39012f696fe726e4fa73293ca1a0d62f
+  - enabled: 1
+    path: Assets/Scenes/3_2.unity
+    guid: b085c671be29f2249a890ce6ecd73b88
+  - enabled: 1
+    path: Assets/Scenes/3_2MaanAlla.unity
+    guid: 8d96abc5ddcb9b44fbe668d62f3009b0
+  - enabled: 1
+    path: Assets/Scenes/3_2MaanPaalla.unity
+    guid: a72adc221e467404da7b20ea2c6e780e
+  - enabled: 1
+    path: Assets/Scenes/3_3.unity
+    guid: d8a027cd13d126a4c934ad1aa5036b37
+  - enabled: 1
+    path: Assets/Scenes/3_4.unity
+    guid: c4e4c244074a9944592b05c57d8b4664
+  - enabled: 1
+    path: Assets/Scenes/3_4Ilmalaivassa.unity
+    guid: a53fabc413fa596478777b505a99f56b
+  - enabled: 1
+    path: Assets/Scenes/3_4Bossi.unity
+    guid: bcf193d2017fefb43acadbbeb2017a11
+  - enabled: 1
+    path: Assets/Scenes/3_4Ulkona.unity
+    guid: 4558ac3862246554da102ab14736f283
+  - enabled: 1
+    path: Assets/Scenes/4_1.unity
+    guid: 719c1bc97ae069d439632319f257ffdc
+  - enabled: 1
+    path: Assets/Scenes/4_1Vedessa.unity
+    guid: 90b88d07a3a93794b98b5bfebaaa48ff
+  - enabled: 1
+    path: Assets/Scenes/4_2.unity
+    guid: 80c5c18b0cadcf94dbddfffeb0e41201
+  - enabled: 1
+    path: Assets/Scenes/4_3.unity
+    guid: ff9fd4aac542cf74d8c3fc2e09b685e0
+  - enabled: 1
+    path: Assets/Scenes/4_4.unity
+    guid: ce49beb1c9ade754e9f5e704ca233b52
+  - enabled: 1
+    path: Assets/Scenes/4_4Laivassa.unity
+    guid: 5556e43b02e971547a7ce83d405a3353
+  - enabled: 1
+    path: Assets/Scenes/4_4Bossi.unity
+    guid: 129ac6a81d4e0954890bcc3c8898aa60
+  - enabled: 1
+    path: Assets/Scenes/4_4Vedessa.unity
+    guid: c5ec8647510e1354083e6e213f7a1db0
+  - enabled: 1
+    path: Assets/Scenes/4_4MaanPaalla.unity
+    guid: 72960db32e95f4046aa9c3d499e83230
+  - enabled: 1
+    path: Assets/Scenes/5_1.unity
+    guid: 1c97c56eea3c1584988ce380a4b8670d
+  - enabled: 1
+    path: Assets/Scenes/5_2.unity
+    guid: 5d46bdc1dff99374089e2683e39ba49f
+  - enabled: 1
+    path: Assets/Scenes/5_2MaanAlla.unity
+    guid: 44a02c9df41f69c44b6a20b27169f28b
+  - enabled: 1
+    path: Assets/Scenes/5_2MaanPaalla.unity
+    guid: 4e4d10561ae6d5a41a81bfa5448926b3
+  - enabled: 1
+    path: Assets/Scenes/5_3.unity
+    guid: 673dfc6a1b7a4a14aa5d5a39102b721f
+  - enabled: 1
+    path: Assets/Scenes/5_3Vedessa.unity
+    guid: 04c0fd59a286d01448a86c3ad9126d97
+  - enabled: 1
+    path: Assets/Scenes/5_3MaanPaalla.unity
+    guid: 854227a3d540b4b43b007854e7c01ff3
+  - enabled: 1
+    path: Assets/Scenes/5_4.unity
+    guid: 85036a5e96474e44d9e2e128773d5645
+  - enabled: 1
+    path: Assets/Scenes/5_4Linnassa.unity
+    guid: 52be1da65ccc4a24480df9eb5dc1abe2
+  - enabled: 1
+    path: Assets/Scenes/5_4Bossi.unity
+    guid: 861ee5beaeb92ca4e9de326d17148678
+  - enabled: 1
+    path: Assets/Scenes/5_4Ulkona.unity
+    guid: fc7f3e59914683a42b25761ddb836f9c
+  - enabled: 1
+    path: Assets/Scenes/6_1.unity
+    guid: d12c6a5c196b6dd478279a586cc447b7
+  - enabled: 1
+    path: Assets/Scenes/6_2.unity
+    guid: e2ccea5435a41934d838ea26496fdd28
+  - enabled: 1
+    path: Assets/Scenes/6_2MaanAlla.unity
+    guid: 6d3a236c7da883d49a0a49476f6ddebe
+  - enabled: 1
+    path: Assets/Scenes/6_2MaanPaalla.unity
+    guid: 46ebc4eb77b6fc045be7af4a9a06760a
+  - enabled: 1
+    path: Assets/Scenes/6_3.unity
+    guid: f268399c7098cc94a8facfedd6c6c8de
+  - enabled: 1
+    path: Assets/Scenes/6_3Vedessa.unity
+    guid: ce822d8f43db46240a5ffb9f1c6347a8
+  - enabled: 1
+    path: Assets/Scenes/6_3MaanPaalla.unity
+    guid: 09b23556f23f44747b6d77fb3ed24a96
+  - enabled: 1
+    path: Assets/Scenes/6_4.unity
+    guid: 94bcb81b7d56bc14191cc729348e601e
+  - enabled: 1
+    path: Assets/Scenes/6_4Linnassa.unity
+    guid: 0d147248e6941c04890cd56a7a33d437
+  - enabled: 1
+    path: Assets/Scenes/6_4Bossi.unity
+    guid: a1f6b7c2a674b6a488054df56d15a55c
+  - enabled: 1
+    path: Assets/Scenes/6_4Ulkona.unity
+    guid: 2e35df38295c3324a90af463e9170d2f
+  - enabled: 1
+    path: Assets/Scenes/7_1.unity
+    guid: 74c8ea0046714fb4698d4376afcc6b0b
+  - enabled: 1
+    path: Assets/Scenes/7_2.unity
+    guid: 98adcdc052e65a14c8c3a6d0d89e0e06
+  - enabled: 1
+    path: Assets/Scenes/7_2MaanAlla.unity
+    guid: 46c8d3d292268344689390c73000bdeb
+  - enabled: 1
+    path: Assets/Scenes/7_2MaanPaalla.unity
+    guid: 1b5da2b586eef0c4ca3d8afdb8481113
+  - enabled: 1
+    path: Assets/Scenes/7_3.unity
+    guid: 920de2f9c7c3e4c46a661ccb9b92458b
+  - enabled: 1
+    path: Assets/Scenes/7_4.unity
+    guid: f4d4ff14adad2374693bd32f421202ab
+  - enabled: 1
+    path: Assets/Scenes/7_4Ilmalaivassa.unity
+    guid: 67ade19a4d36a464f9eb05e61d084863
+  - enabled: 1
+    path: Assets/Scenes/7_4IlmalaivanSisalla.unity
+    guid: c26373537062c7a4798e723a27c26a0f
+  - enabled: 1
+    path: Assets/Scenes/7_4Bossi.unity
+    guid: 95abb91db597dc845801845ead8b3522
+  - enabled: 1
+    path: Assets/Scenes/gameover.unity
+    guid: 24d4afd0f9618204bbfe708799d86e6d
+  - enabled: 1
+    path: Assets/Scenes/voitto.unity
+    guid: f2f7d73e5f8cfa34db5900bb7e77c45e
+  m_configObjects: {}
